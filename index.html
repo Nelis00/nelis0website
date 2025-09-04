@@ -3,11 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMING SOON</title>
+    <title>Nelis0 - Travel Vlogs & Documentaries</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="assets/LogoIcon.png" type="image/x-icon">
 </head>
 <body>
-    <h1>COMING SOON</h1>
-    <p>Stay tuned. I have something in store for y'all.</p>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#home" class="logo-link">
+                        <img src="assets/LogoIcon.png" alt="Nelis0 Logo" class="logo-image">
+                        <span class="logo-text">Travel Stories</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <!-- <li><a href="#videos" class="nav-link">Videos</a></li>
+                    <li><a href="#upcoming" class="nav-link">Upcoming</a></li> -->
+                    <li><a href="books.html" class="nav-link">Books</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon" id="themeIcon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Nelis0</h1>
+                <p class="hero-subtitle">Exploring the world through cinematic travel documentaries</p>
+                <div class="hero-buttons">
+                    <a href="#videos" class="btn btn-primary">Watch Latest</a>
+                    <a href="https://www.youtube.com/@nelis000" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-youtube"></i> Subscribe
+                    </a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Featured Videos Section -->
+        <!-- <section id="videos" class="videos-section"> -->
+            <!-- <div class="container"> -->
+                <!-- <h2 class="section-title">Latest Adventures</h2> -->
+                <!-- <div class="videos-grid"> -->
+                    <!-- <div class="video-card" data-video-url="https://www.youtube.com/watch?v=IJZT-HBmhFY"> -->
+                        <!-- <div class="video-thumbnail"> -->
+                            <!-- <div class="play-button"> -->
+                                <!-- <i class="fas fa-play"></i> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- <div class="video-info"> -->
+                            <!-- <h3>Video title</h3> -->
+                            <!-- <p>Eind november en nog een Halloweenaflevering. Er was een tijd dat ik deze video wilde annuleren, maar ik heb toch besloten hem te...</p> -->
+                            <!-- <span class="video-duration">12:45</span> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!--  -->
+                    <!-- <div class="video-card" data-video-url="https://youtu.be/Lllvyo5uNm4?si=36QUVXEHYPI1R8J4"> -->
+                        <!-- <div class="video-thumbnail"> -->
+                            <!-- <div class="play-button"> -->
+                                <!-- <i class="fas fa-play"></i> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- <div class="video-info"> -->
+                            <!-- <h3>Video Title</h3> -->
+                            <!-- <p>Vandaag gingen wij naar Irrland (Kevelaer).</p> -->
+                            <!-- <span class="video-duration">18:32</span> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!--  -->
+                    <!-- <div class="video-card" data-video-url="https://www.youtube.com/watch?v=kutiRSfL13w"> -->
+                        <!-- <div class="video-thumbnail"> -->
+                            <!-- <div class="play-button"> -->
+                                <!-- <i class="fas fa-play"></i> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- <div class="video-info"> -->
+                            <!-- <h3>Local Culture Immersion</h3> -->
+                            <!-- <p>Vandaag konden we de zipline op de camping doen, en zoals gewoonlijk bij ons, ging niet alles perfect.</p> -->
+                            <!-- <span class="video-duration">25:18</span> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </section> -->
+<!--  -->
+        <!-- Upcoming Videos Section -->
+        <!-- <section id="upcoming" class="upcoming-section"> -->
+            <!-- <div class="container"> -->
+                <!-- <h2 class="section-title">Coming Soon</h2> -->
+                <!-- <p class="section-subtitle">Get excited for these upcoming adventures!</p> -->
+                <!-- <div class="upcoming-grid"> -->
+                    <!-- <div class="upcoming-card"> -->
+                        <!-- <div class="upcoming-thumbnail"> -->
+                            <!-- <div class="coming-soon-badge"> -->
+                                <!-- <i class="fas fa-clock"></i> -->
+                                <!-- <span>Coming Soon</span> -->
+                            <!-- </div> -->
+                            <!-- <div class="upcoming-overlay"> -->
+                                <!-- <i class="fas fa-calendar-alt"></i> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- <div class="upcoming-info"> -->
+                            <!-- <h3>Avanti a Roma</h3> -->
+                            <!-- <p>Join me on my trip to Rome and the Vatican. Who knows, maybe you'll learn something about the Roman era?</p> -->
+                            <!-- <div class="upcoming-meta"> -->
+                                <!-- <span class="upcoming-date"> -->
+                                    <!-- <i class="fas fa-calendar"></i> September 2025 -->
+                                <!-- </span> -->
+                                <!-- <span class="upcoming-type"> -->
+                                    <!-- <i class="fas fa-video"></i> Vlog Documentary -->
+                                <!-- </span> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+<!--  -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </section> -->
+
+        <!-- Books Section -->
+        <section id="books" class="books-section">
+            <div class="container">
+                <h2 class="section-title">My Books</h2>
+                <p class="section-subtitle">Dive into worlds of imagination and futuristic adventures</p>
+                <div class="books-grid-horizontal">
+                    <div class="book-card-horizontal">
+                        <div class="book-cover-horizontal">
+                            <img src="assets/covers/SurvivorsOfTheApocalypse.jpg" alt="Survivors of the Apocalypse Cover" class="book-cover-image">
+                            <div class="book-status-badge-small published">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                        <div class="book-info-horizontal">
+                            <h3>Survivors of the Apocalypse</h3>
+                            <p class="book-synopsis-short">All political tensions broke loose, and the entire world has been torn asunder. Nino wakes up, and is immediately thrown into a world full of threats...</p>
+                            <div class="book-meta-horizontal">
+                                <span class="book-genre">
+                                    <i class="fas fa-skull-crossbones"></i> Post-Apocalyptic
+                                </span>
+                                <span class="book-year">
+                                    <i class="fas fa-calendar"></i> 2025
+                                </span>
+                                <span class="book-pages">
+                                    <i class="fas fa-book-open"></i> ±150 pages
+                                </span>
+                            </div>
+                            <div class="book-actions-horizontal">
+                                <a href="#" class="btn-small btn-primary">
+                                    <i class="fas fa-shopping-cart"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-card-horizontal">
+                        <div class="book-cover-horizontal">
+                            <img src="assets/covers/TimeTravelers.png" alt="Time Travelers Cover" class="book-cover-image">
+                            <div class="book-status-badge-small published">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                        <div class="book-info-horizontal">
+                            <h3>Time Travelers</h3>
+                            <p class="book-synopsis-short">When a great depressive power called 'Tenebris Paluvia' threatens to consume the world, seven heroes end up in a world filled with magic and elements...</p>
+                            <div class="book-meta-horizontal">
+                                <span class="book-genre">
+                                    <i class="fas fa-magic"></i> Elemental Magic
+                                </span>
+                                <span class="book-year">
+                                    <i class="fas fa-calendar"></i> 2022
+                                </span>
+                                <span class="book-pages">
+                                    <i class="fas fa-book-open"></i> 82 pages
+                                </span>
+                            </div>
+                            <div class="book-actions-horizontal">
+                                <a href="#" class="btn-small btn-secondary disabled">Not for Sale</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-card-horizontal">
+                        <div class="book-cover-horizontal">
+                            <img src="assets/covers/SurvivalIsland.jpg" alt="Survival Island Cover" class="book-cover-image">
+                            <div class="book-status-badge-small published">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                        <div class="book-info-horizontal">
+                            <h3>Survival Island</h3>
+                            <p class="book-synopsis-short">In a fun activity week for the local high school, two students end up on an abandoned island by a strange hooded figure...</p>
+                            <div class="book-meta-horizontal">
+                                <span class="book-genre">
+                                    <i class="fas fa-island-tropical"></i> Survival
+                                </span>
+                                <span class="book-year">
+                                    <i class="fas fa-calendar"></i> 2020
+                                </span>
+                                <span class="book-pages">
+                                    <i class="fas fa-book-open"></i> 25 pages
+                                </span>
+                            </div>
+                            <div class="book-actions-horizontal">
+                                <a href="#" class="btn-small btn-secondary disabled">Not for Sale</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="books-cta">
+                    <a href="books.html" class="btn btn-primary">
+                        <i class="fas fa-book-open"></i> Explore All Books
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About Nelis0</h2>
+                        <p>Welcome to my corner of the internet! I'm passionate about documenting the beauty, culture, and stories found in every corner of our world. Through cinematic travel vlogs and documentaries, I aim to inspire others to explore, understand, and appreciate the diverse tapestry of human experience.</p>
+                        <p>From remote mountain villages to bustling urban centers, each journey tells a unique story. Join me as we discover hidden gems, meet incredible people, and uncover the extraordinary in the ordinary.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <h3>6</h3>
+                                <p>Countries Visited</p>
+                            </div>
+                            <div class="stat">
+                                <h3>81</h3>
+                                <p>Subscribers</p>
+                            </div>
+                            <div class="stat">
+                                <h3>21</h3>
+                                <p>Videos Created</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <img src="assets/photos/Profile.png" alt="Nelis0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 >Get In Touch</h2>
+                    <p>Have a question, collaboration idea, or just want to say hello? I'd love to hear from you!</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer  class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Nelis0</h3>
+                    <p>Documenting the world, one story at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#upcoming">Upcoming</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@nelis000" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nelis0. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script-new.js"></script>
 </body>
 </html>

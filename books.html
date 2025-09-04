@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - Nelis0</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="assets/LogoIcon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="assets/LogoIcon.png" alt="Nelis0 Logo" class="logo-image">
+                        <span class="logo-text">Travel Stories</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#videos" class="nav-link">Videos</a></li>
+                    <li><a href="index.html#upcoming" class="nav-link">Upcoming</a></li>
+                    <li><a href="books.html" class="nav-link active">Books</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon" id="themeIcon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="books-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Books</h1>
+                <p class="hero-subtitle">Stories across time and space, all colliding here.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>3</h3>
+                        <p>Books</p>
+                    </div>
+                    <div class="stat">
+                        <h3>3</h3>
+                        <p>Series</p>
+                    </div>
+                    <div class="stat">
+                        <h3>∞</h3>
+                        <p>Imagination</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Featured Book Section -->
+        <section class="featured-book-section">
+            <div class="container">
+                <h2 class="section-title">Featured Book</h2>
+                <div class="featured-book">
+                    <div class="book-cover-large">
+                        <img src="assets/covers/SurvivorsOfTheApocalypse.jpg" alt="Survivors of the Apocalypse Book Cover" class="book-cover-image">
+                        <div class="book-badge">
+                            <span>Latest Release</span>
+                        </div>
+                    </div>
+                    <div class="book-details">
+                        <h3>Survivors of the Apocalypse</h3>
+                        <p class="book-tagline">When the entire world tries to kill you, it's up to you to survive.</p>
+                        <div class="book-meta-large">
+                            <span class="meta-item">
+                                <i class="fas fa-calendar"></i> 04-09-2025
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-book-open"></i> 130 pages
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-star"></i> N/A
+                            </span>
+                        </div>
+                        <p class="book-description">
+                            What starts as a regular school day turns into a nightmare for sixteen-year-old Nino when the sky ignites and the world he knew vanishes in fire and silence. Now trapped with a handful of classmates—some friends, some strangers—in a scorched and unfamiliar wasteland, survival means more than just finding food and shelter. It means facing fear, grief, and the truths they've all been running from.
+                            As strange masked figures emerge from the ruins and whispers of something greater stir in the shadows, Nino and his group are forced to ask the hardest question of all:
+                            What if surviving the apocalypse was only the beginning?
+                        </p>
+                        <p class="book-description">
+                            Starting as a fictional story based on what would happen if I would wake up in a post-apocalyptic world, this book has grown into a fully fleshed out story, and seeing recent events across the world, it has become more relevant than ever. The book is an action packed, mystery filled adventure, with a lot of twists and turns. It is a story about survival, but also about the human condition, and how we deal with extreme situations.
+                        </p>
+                        <div class="book-pricing">
+                            <div class="price-options">
+                                
+                                <div class="price-option">
+                                    <span class="format-type">
+                                        <i class="fas fa-book"></i> Physical Copy
+                                    </span>
+                                    <span class="price">€16,50</span>
+                                </div>
+
+                                <div class="price-option">
+                                    <span class="format-type">
+                                        <i class="fas fa-cloud"></i> Digital Copy
+                                    </span>
+                                    <span class="price">N/A</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="book-actions">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fas fa-book-reader"></i> Read Preview
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Books Section -->
+        <section class="all-books-section">
+            <div class="container">
+                <h2 class="section-title">Complete Collection</h2>
+                <p class="section-subtitle">Explore all my science fiction works</p>
+                
+                <div class="books-detailed-grid">
+                    <!-- Book 1 -->
+                    <div class="book-detailed-card">
+                        <div class="book-cover-medium">
+                            <img src="assets/covers/TimeTravelers.png" alt="Time Travelers Book Cover" class="book-cover-image">
+                            <div class="book-status-badge published">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Finished</span>
+                            </div>
+                        </div>
+                        <div class="book-detailed-info">
+                            <h3>Time Travelers</h3>
+                            <p class="book-genre">
+                                <i class="fas fa-tags"></i> A Different World • Elemental Magic
+                            </p>
+                            <p class="book-synopsis">
+                                When a great depressive power called 'Tenebris Paluvia' threatens to consume the world, seven heroes end up in a world filled with magic and elements, and must learn to harness this power, while also defending the new world from darkness and rebellions. But, once they return home, they find out that they've been gone for 2000 years, while Tenebris Paluvia has taken on a new form. Will they be able to stop it, or will they fail?
+                            </p>
+                            <div class="book-details-meta">
+                                <span><i class="fas fa-calendar"></i> 2022</span>
+                                <span><i class="fas fa-book-open"></i> 82/138 pages</span>
+                                <span><i class="fas fa-edit"></i> Finished</span>
+                            </div>
+                            <div class="book-pricing-small">
+                                <div class="price-tag disabled">
+                                    <span class="price-label">Not for Sale</span>
+                                    <span class="price-note">Personal Project</span>
+                                </div>
+                            </div>
+                            <div class="book-actions-small">
+                                <a href="#" class="btn-small btn-primary disabled">Not for sale</a>
+                                <a href="#" class="btn-small btn-secondary disabled">Not available</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Book 2 -->
+                    <div class="book-detailed-card">
+                        <div class="book-cover-medium">
+                            <img src="assets/covers/SurvivalIsland.jpg" alt="Neural Nexus Book Cover" class="book-cover-image">
+                            <div class="book-status-badge published">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Finished</span>
+                            </div>
+                        </div>
+                        <div class="book-detailed-info">
+                            <h3>Survival Island</h3>
+                            <p class="book-genre">
+                                <i class="fas fa-tags"></i> Game Show • Survival
+                            </p>
+                            <p class="book-synopsis">
+                                In a fun activity week for the local high school, two students end up on an abandoned island by a strange hooded figure. He forces them to participate in his game show 'Survival Island', where they have to fend off their own zombified friends and classmates, while also trying to survive the island itself. The two students have to work together to find a way off the island, and find out who is behind this twisted game show.
+                            </p>
+                            <div class="book-details-meta">
+                                <span><i class="fas fa-calendar"></i> 2020</span>
+                                <span><i class="fas fa-book-open"></i> 25 pages</span>
+                                <span><i class="fas fa-edit"></i> Finished</span>
+                            </div>
+                            <div class="book-pricing-small">
+                                <div class="price-tag disabled">
+                                    <span class="price-label">Not for Sale</span>
+                                    <span class="price-note">Personal project</span>
+                                </div>
+                            </div>
+                            <div class="book-actions-small">
+                                <a href="#" class="btn-small btn-primary disabled">Not for sale</a>
+                                <a href="#" class="btn-small btn-secondary disabled">Not available</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+        <!-- Writing Process Section -->
+        <section class="writing-process-section">
+            <div class="container">
+                <h2 class="section-title">Behind the Stories</h2>
+                <div class="process-content">
+                    <div class="process-text">
+                        <h3>My Writing Journey</h3>
+                        <p>
+                            I have always been told I have a vivid imagination, and I've been making up stories ever since I was a child. My first story, which I wrote at the age of 10, was about me and my family ending up in a strange world. It was simple, and had 5 pages, including the cover. But ever since then, I've been writing stories about scenarios that I would like to see. Like me and my secondary school class becoming the heroes of our school by defeating an alien monster (which is something I've written).
+                        </p>
+                        <p>
+                            At school, I was one of the stranger kids, acting out my own stories in the playground, and I liked reading, which was something that not many of my classmates did. I was always fascinated by the stories I read, and I wanted to create my own worlds, with their own rules and characters. I started writing short stories, and eventually moved on to longer ones, and now I'm working on my first full-length novel.
+                        </p>
+                        <div class="writing-stats">
+                            <div class="stat">
+                                <h4>500+</h4>
+                                <p>Research Hours<br>(Including sidetracking)</p>
+                            </div>
+                            <div class="stat">
+                                <h4>45+</h4>
+                                <p>Story Drafts</p>
+                            </div>
+                            <div class="stat">
+                                <h4>∞</h4>
+                                <p>Ideas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Get notified about new releases, behind-the-scenes content, and exclusive previews.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Subscribe
+                            </button>
+                        </div>
+                    </form>
+                    <p class="newsletter-note">
+                        <i class="fas fa-shield-alt"></i> Your privacy is important. No spam, unsubscribe anytime.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Nelis0</h4>
+                    <p>Exploring worlds both real and imagined</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@nelis000" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://x.com/daniels_ni44787" target="_blank" aria-label="Twitter">
+                            X
+                        </a>
+                        <a href="https://www.instagram.com/_nelisaaah/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.marktplaats.nl/u/nils-games/48109345/" target="_blank" aria-label="Goodreads">
+                            <svg width="30px" height="30px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><defs><style>.a{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;}</style></defs><line class="a" x1="16.0048" y1="35.5" x2="31.9952" y2="35.5"/><path class="a" d="M21.554,12.5a111.6608,111.6608,0,0,1,8.9079,9.4556s-6.8635,7.8857-8.6159,9.09"/><circle class="a" cx="24" cy="24" r="21.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#videos">Videos</a></li>
+                        <li><a href="index.html#upcoming">Upcoming</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section"></div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="index.html#contact">Contact Form</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nelis0. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script-new.js"></script>
+
+    <!-- PDF Preview Modal -->
+    <div id="pdfPreviewModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="closePdfModal">&times;</span>
+            <h2 class="modal-title">Book Preview</h2>
+            <iframe id="pdfPreviewFrame" src="" width="100%" height="500px" style="border:none;"></iframe>
+        </div>
+    </div>
+    <style>
+    .modal {
+        position: fixed;
+        z-index: 9999;
+        left: 0; top: 0;
+        width: 100vw; height: 100vh;
+        background: rgba(0,0,0,0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.3s;
+    }
+    .modal-content {
+        background: #fff;
+        border-radius: 12px;
+        max-width: 90vw;
+        width: 1200px;
+        padding: 2rem;
+        position: relative;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    }
+    .modal-title {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        color: #222;
+    }
+    .close {
+        position: absolute;
+        top: 1rem; right: 1rem;
+        font-size: 2rem;
+        color: #e74c3c;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    @media (max-width: 700px) {
+        .modal-content { width: 98vw; padding: 1rem; }
+        #pdfPreviewFrame { height: 350px; }
+    }
+    </style>
+</body>
+</html>
