@@ -64,6 +64,12 @@ p {
     font-weight: 400;
 }
 
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
 /* Container */
 .container {
     max-width: 1200px;
