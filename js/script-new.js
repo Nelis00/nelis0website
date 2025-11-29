@@ -221,52 +221,6 @@ Best regards,
         console.log('📚 Book data synchronized between pages');
     }
 
-    // PDF Preview Modal Logic
-    function initializePdfPreviewModal() {
-        const modal = document.getElementById('pdfPreviewModal');
-        const closeBtn = document.getElementById('closePdfModal');
-        const frame = document.getElementById('pdfPreviewFrame');
-        
-        // Find all Read Preview buttons
-        const previewButtons = document.querySelectorAll('.btn-secondary, .btn-small.btn-secondary');
-        previewButtons.forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                // Only trigger for enabled buttons
-                if (btn.classList.contains('disabled')) return;
-                e.preventDefault();
-                // Determine which book preview to show
-                let bookCard = btn.closest('.book-detailed-card, .featured-book');
-                let bookTitle = bookCard ? bookCard.querySelector('h3')?.textContent.trim() : '';
-                let pdfPath = '';
-                if (bookTitle === 'Survivors of the Apocalypse') {
-                    pdfPath = 'assets/previews/SurvivorsOfTheApocalypse-preview.pdf';
-                } else if (bookTitle === 'Time Travelers') {
-                    pdfPath = 'assets/previews/TimeTravelers-preview.pdf';
-                } else if (bookTitle === 'Survival Island') {
-                    pdfPath = 'assets/previews/SurvivalIsland-preview.pdf';
-                } else {
-                    pdfPath = '';
-                }
-                if (pdfPath) {
-                    frame.src = pdfPath;
-                    modal.style.display = 'flex';
-                }
-            });
-        });
-        // Close modal
-        closeBtn.addEventListener('click', function() {
-            modal.style.display = 'none';
-            frame.src = '';
-        });
-        // Close modal on outside click
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-                frame.src = '';
-            }
-        });
-    }
-
     // Initialize everything
     initializeThemeToggle();
     initializeContactForm();
