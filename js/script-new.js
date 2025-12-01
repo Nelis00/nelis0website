@@ -220,6 +220,65 @@ Best regards,
         // In the future, you could fetch this from a JSON file or API
         console.log('📚 Book data synchronized between pages');
     }
+    // PDF Preview Modal Logic
+    function initializePdfPreviewModal() {
+        const modal = document.getElementById('pdfPreviewModal');
+        const closeBtn = document.getElementById('closePdfModal');
+        const frame = document.getElementById('pdfPreviewFrame');
+        if (!modal || !frame) return;
+
+        function openPreview(src) {
+            if (!src) return;
+            frame.src = src;
+            modal.style.display = 'flex';
+        }
+
+        // Find all preview buttons (those that might open a PDF preview)
+        const previewButtons = document.querySelectorAll('a[data-preview], a.btn-secondary');
+        previewButtons.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                // ignore disabled
+                if (btn.classList.contains('disabled')) return;
+                // only handle when button either has data-preview or contains "read preview" text
+                const dataPreview = btn.getAttribute('data-preview');
+                if (!dataPreview && !/read preview/i.test(btn.textContent)) return;
+                e.preventDefault();
+
+                // prefer explicit data-preview attribute
+                if (dataPreview) {
+                    openPreview(dataPreview);
+                    return;
+                }
+
+                // otherwise try to derive from the book title
+                const bookCard = btn.closest('.book-detailed-card, .featured-book, .upcoming-book');
+                let bookTitle = bookCard ? (bookCard.querySelector('h3')?.textContent.trim() || '') : '';
+                let pdfPath = '';
+                switch (bookTitle) {
+                    case 'Survivors of the Apocalypse':
+                        pdfPath = 'assets/previews/SurvivorsOfTheApocalypse-preview.pdf';
+                        break;
+                    case 'Time Travelers':
+                        pdfPath = 'assets/previews/TimeTravelers-preview.pdf';
+                        break;
+                    case 'Survival Island':
+                        pdfPath = 'assets/previews/SurvivalIsland-preview.pdf';
+                        break;
+                    case 'Echoes of the Void':
+                        pdfPath = 'assets/previews/EchoesOfTheVoid-preview.pdf';
+                        break;
+                    default:
+                        pdfPath = '';
+                }
+
+                if (pdfPath) openPreview(pdfPath);
+            });
+        });
+
+        // Close handlers
+        if (closeBtn) closeBtn.addEventListener('click', () => { modal.style.display = 'none'; frame.src = ''; });
+        modal.addEventListener('click', (e) => { if (e.target === modal) { modal.style.display = 'none'; frame.src = ''; } });
+    }
 
     // Initialize everything
     initializeThemeToggle();

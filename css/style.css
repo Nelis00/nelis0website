@@ -357,6 +357,41 @@ section {
     background: var(--background-section-light);
 }
 
+/* Layout for the upcoming book block: text left, image right */
+.upcoming-book {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 2rem;
+    align-items: center;
+}
+
+.upcoming-book .upcoming-thumbnail {
+    height: auto;
+    min-height: 180px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming-book .upcoming-thumbnail img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .upcoming-book {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .upcoming-book .upcoming-thumbnail {
+        min-height: 120px;
+        width: 100%;
+    }
+}
+
 .section-subtitle {
     text-align: center;
     font-size: 1.2rem;
@@ -388,8 +423,7 @@ section {
 
 .upcoming-thumbnail {
     position: relative;
-    height: 200px;
-    background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -403,8 +437,18 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-    opacity: 0.3;
+    
+}
+
+/* Make upcoming preview images smaller and contained so they sit centered above text
+   without affecting other book cover styles. */
+.upcoming-thumbnail img {
+    max-width: 90%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .coming-soon-badge {
@@ -2343,7 +2387,7 @@ section {
     
     /* Improve upcoming card layout */
     .upcoming-thumbnail {
-        height: 150px;
+        height: 120px;
     }
     
     .coming-soon-badge {
